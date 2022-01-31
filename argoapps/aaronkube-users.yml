@@ -10,7 +10,7 @@ spec:
     repoURL: https://github.com/aaronclements/aaronkube-argocd.git
     targetRevision: HEAD
     path: dev/users
-  destination: 
+  destination:
     server: https://kubernetes.default.svc
     namespace: myapp
   syncPolicy:
