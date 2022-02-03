@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/aaronclements/aaronkube-argocd.git
     targetRevision: HEAD
-    path: dev/users
+    path: dev/metrics-server
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-system
