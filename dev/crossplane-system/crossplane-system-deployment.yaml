@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8sclass
+  name: crossplane-system
 spec:
   selector:
     matchLabels:
-      app: k8sclass
+      app: crossplane-system
   replicas: 5
   template:
     metadata:
       labels:
-        app: k8sclass
+        app: crossplane-system
     spec:
       containers:
-      - name: k8sclass
+      - name: crossplane-system
         image: nginx
         ports:
         - containerPort: 8098
