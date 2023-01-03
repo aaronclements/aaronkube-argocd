@@ -1,0 +1,12 @@
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: xp-getting-started-with-aws
+spec:
+  ignoreCrossplaneConstraints: false
+  package: registry.upbound.io/xp/getting-started-with-aws:latest
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 0
+  skipDependencyResolution: false
