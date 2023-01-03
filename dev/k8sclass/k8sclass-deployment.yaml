@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: k8sclass
 spec:
   selector:
     matchLabels:
-      app: myapp
-  replicas: 1
+      app: k8sclass
+  replicas: 5
   template:
     metadata:
       labels:
-        app: myapp
+        app: k8sclass
     spec:
       containers:
-      - name: myapp
+      - name: k8sclass
         image: nginx
         ports:
-        - containerPort: 8090
+        - containerPort: 8098
